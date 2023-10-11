@@ -14,12 +14,13 @@ import sqlite3
 
 
 class QuotetutorialPipeline(object):
-
-    def __int__(self):
+    def __init__(self):
         self.create_connection()
         self.create_table()
 
+
 # method to create a connection
+
     def create_connection(self):
         self.coon = sqlite3.connect("myquotes.db")
         self.curr = self.coon.cursor()
