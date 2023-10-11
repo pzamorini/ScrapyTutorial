@@ -28,7 +28,7 @@ class QuoteSpider(scrapy.Spider):
             items['title'] = title
             items['author'] = author
             items['tag'] = tag
-        # here in am storing the data in the temporary container
+        # here I am storing the data in the temporary container
 
             yield items
         # yield is used in generators functions. basically I am generating
